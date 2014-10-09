@@ -1,7 +1,7 @@
 fib := method(number,
-              if(number <= 0, return 0,
-              if(number == 1, return 1,
-              return fib(number - 2) + fib(number - 1))))
+              if(number <= 0, 0,
+              if(number == 1, 1,
+              fib(number - 2) + fib(number - 1))))
 
 assertEqual := method(expected, actual,
                       if(expected == actual, true, false))
